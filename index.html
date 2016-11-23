@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>services_angular</title>
+</head>
+<body ng-app="appName">
+
+	<div>
+		<ul ng-controller="peopleCtrl">
+			<li ng-repeat="personObj in people">{{ personObj.name }} {{ personObj.lastName
+			}}</li>
+		</ul>
+	</div>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="peopleService.js"></script>
+<script src="peopleCtrl.js"></script>
+</body>
+</html>
