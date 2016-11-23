@@ -7,7 +7,7 @@
 
 	<div>
 		<ul ng-controller="peopleCtrl">
-			<li ng-repeat="personObj in people">{{ personObj.name }} {{ personObj.lastName
+			<li ng-repeat="personObj in people | orderBy: 'name' ">{{ personObj.name }} {{ personObj.lastName
 			}}</li>
 		</ul>
 	</div>
